@@ -227,6 +227,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//gallery
+gsap.from(".gsap-item", {
+    scrollTrigger: {
+        trigger: ".gallery",
+        start: "top 80%",
+    },
+    opacity: 0,
+    y: 50,
+    scale: 0.9,
+    duration: 1,
+    stagger: 0.2
+});
+
 //blog details
 document.addEventListener("DOMContentLoaded", function () {
     gsap.from(".blog-details-title", { y: -50, opacity: 0, duration: 1, ease: "power3.out" });

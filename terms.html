@@ -1,0 +1,1173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap + GSAP Header</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 (Latest) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.5/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .privacy p {
+            transition: all 0.3s ease;
+        }
+
+        .privacy p:hover {
+            background: #f8f9fa;
+            padding-left: 10px;
+            border-left: 4px solid #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start-->
+    <header>
+        <div class="topheader py-2 text-white shadow-sm">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Side -->
+                    <div
+                        class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0 top-header-left">
+                        <a href="tel:+01937563157" class="me-3">
+                            <i class="fas fa-phone me-1 text-warning"></i> 01937563157
+                        </a>
+                        <a href="mailto:najmulcse247@gmail.com">
+                            <i class="fas fa-envelope me-1 text-info"></i> najmulcse247@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end top-header-left">
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark py-2">
+            <div class="container">
+                <!-- Logo Left -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.jpeg" alt="Logo" style="max-width:150px;">
+                </a>
+
+                <!-- Hamburger / Offcanvas Toggle (Mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav mb-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end-->
+
+    <!-- breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="breadcrumb-bg"></div>
+        <div class="breadcrumb-content">
+            <h1>Our Packages</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Packages</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- privacy -->
+    <div class="privacy py-5">
+        <div class="container">
+            <div class="shadow-lg p-5 bg-white rounded-4">
+                Welcome to Cosmos Holiday!
+                Please read the following terms and conditions carefully. You must not accept any booking unless you
+                understand and agree with the following terms and conditions. This Website is provided solely to assist
+                customers in gathering travel information, determining the availability of travel-related goods and
+                services, making legitimate reservations or otherwise transacting business with travel suppliers, and
+                for no other purposes. If you use this website you are 100% agreed to our Terms and Conditions mentioned
+                below: -
+
+
+
+                Terms of use & copyright
+
+                This site is protected by copyright.
+
+                The services of Cosmos Holiday are made available to you on the following terms which apply to the whole
+                or any part of the site:
+
+                The site is for your personal use only.
+
+                You may not reproduce or make available the site except for downloading on to a single CPU and viewing
+                for private use only.
+
+                You may not, except with our express prior written permission, distribute or commercially exploit the
+                site.
+
+                All other rights are reserved to Cosmos Holiday.
+
+                Any infringement of Cosmos Holiday will result in legal action.
+
+
+
+                Use of the Platform
+
+                · As a condition of your use of our Platform, you warrant that:
+
+                · you are at least 18 years of age;
+
+                · you possess the legal authority to create a binding legal obligation;
+
+                · you will use the Platform in accordance with these Terms;
+
+                · you will only use this Platform for your private use to search for legitimate flight, visa, hotel
+                deals;
+
+                · If you use the Platform on behalf of someone else, you will inform them about the Terms that apply to
+                any searches and/or bookings you have made on their behalf, including all rules and restrictions
+                applicable thereto;
+
+                · All information supplied by you to our Platform is true, accurate, current and complete; and
+
+                · If you have a Cosmos Holiday account, you will safeguard your account information and will supervise
+                and be completely responsible for any use of your account by you and anyone other than you.
+
+
+
+                General Term and Conditions
+
+                1. The 'day of travel' depends on the flight / bus / train / ship schedule.
+
+                2. In case of package tour, the date of travel should be fixed at least 03 (three) weeks (twenty-one
+                days) in advance.
+
+                3. In case of Eid, Puja, Christmas, New Year or special holiday, the minimum 01 (one) month 15 (fifteen)
+                days or 02 (two) months before the date of travel should be fixed.
+
+                4. Cosmos Holiday does not guarantee a visa for anyone, even if the visa is issued by the embassy. In
+                case of refusal, visa fee and service charge are non-refundable.
+
+                5. Visa processing may require a minimum of 07 (seven) to 45 (forty-five) working days or more, in which
+                case the Cosmos Authority may not be pressured for visa delivery. Cosmos Holiday is not responsible for
+                visa delays by the embassy.
+
+                6. Visa revocation is specified by the Embassy through the application form which you can apply.
+
+                7. Cosmos Holiday does not support advance ticket purchases prior to visa. If someone buys a ticket
+                before the visa is issued and if the visa is not issued, then all the responsibility has to be borne by
+                the customer.
+
+                8. You can collect your passport by providing due amount and original copy money receipt.
+
+                9. No forged or fake documents are acceptable.
+
+                10. Cosmos Holiday will not be liable for any delay / cancellation of flight / bus / train / ship. But
+                the customer will get his money back according to the law of the company.
+
+                11. Tickets and hotel vouchers will be issued 03 (three) to 08 (seven) days before the trip after the
+                total payment has been made.
+
+                12. You have to pay the full amount of the package 10 (ten) to 21 (twenty-one) days before the trip.
+                Otherwise the booked hotel will be deemed cancelled and travel with hotel booking will have to be
+                confirmed subject to subsequent additional payment.
+
+                13. Air tickets and package prices on package tours to various European countries including Maldives,
+                Sri Lanka have to be paid at once, which is non-refundable.
+
+                14. Additional fares will apply due to dollar exchange / increase in fuel oil or gas or air ticket
+                prices.
+
+                15. In case of change of date of purchased ticket, the customer has to pay extra for the change of date,
+                difference of fair and service charge.
+
+                16. No date change or cancelation of tour over phone call.
+
+                17. In case of change of travel date or tour plan after booking package, minimum service charge of BDT.
+                2,500 / - (two thousand five hundred) per person or more depending on the package has to be paid.
+                Booking cancellation charges for different hotels will also have to be paid at least 25% or more of the
+                total package price.
+
+                18. In case of Eid, Puja, Christmas, New Year or special holidays, additional surcharge with increased
+                price will have to be paid due to increase in fares of any hotel, plane, bus, train and ship.
+
+                19. If the official travel tax increases, the traveller will have to bear that amount.
+
+                20. 72 to 96 hours are applicable for residential hotel reservations but if the scheduled hotel is not
+                available, Cosmos Holiday has right to change residential hotel.
+
+                21. Original copy of payment and receipt must be kept. Cosmos Holiday reserves the full power to change
+                and cancel any package.
+
+                22. Hotel rooms in packages are always standard. However, extra money will be applicable in case of
+                specific room choice. Such as- Deluxe Super Deluxe, Suite etc.
+
+                23. Any natural disasters and political disturbances or transportation reduce, change or cancel tour
+                days due to mechanical faults, the authorities will not be responsible for spending extra nights and all
+                the cost has to be borne by the esteemed tourist.
+
+                24. If illegal goods are found in the possession of a tourist during the scheduled time of the package
+                tour and a police complication is created, the tour of that person will be cancelled and Cosmos Holiday
+                will not bear any responsibility and the price of the package is non-refundable.
+
+                25. No alcohol or intoxicants are allowed on the tour. No anti-social activities can be done. 26 in this
+                kind of work. If proven, the tour will be cancel with the consent of all members of the tour will be and
+                travel expenses are non-refundable.
+
+                26. Cosmos Holiday authorities are not responsible for the front or rear seats when receiving flight /
+                bus / train / ship tickets.
+
+                27. In case of group tour, the one who pays the full price in advance will be able to choose the seat of
+                international bus.
+
+                28. In case of internal tour, the one who will sit in front today will sit 01 (one) step behind the next
+                day. In this way the seats will be changed in turn.
+
+                29. In case of private or group tours, all the tourists must be present with mentioned time otherwise if
+                anyone miss anything the authority will not be liable.
+
+                30. If one or more members are reduced or increased after the package price has been fixed on the
+                designated member, then the package price may increase.
+
+                31. Choose package services and hotels according to your ability and affordability and find out about
+                the quality of the hotel from the website. No objection is accepted while traveling.
+
+                32. On the way from Kolkata to Delhi can be either Rajdhani or Duronto.
+
+                33. In case of hilly areas, AC will not run in any vehicle.
+
+                34. Extra packets of food for your own needs or for breakfast cannot be collected in bags.
+
+                35. The hotel will provide filtered water for meals. No mineral water will be provided.
+
+                36. In case of traveling in hilly areas, any standard hotel in those areas will have lunch or dinner
+                arrangements, in which case some time may be required for management.
+
+                37. Meals are not provided in Budget Category / Domestic Air Travel.
+
+                38. In case of group tour, if any food is taken outside the specific food, price has to be provided by
+                the tourist.
+
+                39. No date change, cancellation or money refund will be provided for online hotel or tour package
+                booking.
+
+                40. There will be no change. However, if you want to pay any extra money for the tour, you have to pay
+                with the permission of Cosmos Holiday. Otherwise, Cosmos Holiday will not be held responsible.
+
+                41. In Budget Category / Domestic Air Travel, handbags must be small bags weighing a maximum of 07
+                (seven) kg. The customer will have to bear the charge for the extra bag if required.
+
+                42. Cosmos Holiday will not pay for any tips or bounties.
+
+                43. If you have a travel problem, you must report it to Cosmos' local agent or directly to Cosmos
+                authorities. Otherwise, no complaint will be accepted.
+
+                44. In case of 'Receipt' at Bus / Train / Ship / Aircraft Terminal, if it does not arrive on time due to
+                transport delay, it should be reported to the Cosmos Authority in advance. In that case Cosmos Authority
+                will try to wait 1 (one) hour more than the time of receipt. Otherwise guest have to go directly to the
+                hotel on duty.
+
+                45. Before booking any package, you have to understand inclusion and exclusion, after the booking you
+                cannot claim anything else.
+
+                46. When it comes to air tickets, be sure to include your name, where you are going (destination) and
+                the date. Before leaving the office, make sure that the ticket is valid. Subsequent complaints are not
+                admissible.
+
+                47. In case of tour by plane you must arrive at the airport 03 (three) hours before the flight and in
+                case of bus you must reach the terminal 30 (thirty) minutes before.
+
+                48. If you encounter any problems during the tour, you must notify the Cosmos Holiday Authority during
+                the tour. No complaints are accepted after the tour is over.
+
+                49. Embassy Fee, Border Fee, Entry fee must be borne by the traveller if it is not mentioned in package.
+
+                50. Money or passport must be kept with you when returning the money. No passport or money will be
+                returned without money receipt.
+
+                51. If you want to take a single room in the hotel, the package price may increase.
+
+                52. Sharing one room is not possible without the legitimacy of the relationship.
+
+                53. Cosmos authorities are not responsible if the goods are lost due to your negligence.
+
+                54. You have to be friendly with everyone in the group on the group tour.
+
+                55. Documents required for immigration (NOC, GO) Original and photocopy must be kept with.
+
+                56. While traveling keep Confirmation Letter, Passport, Ticket etc. to solve any danger or problem.
+
+                57. Learn and obey the laws of the country you travel to.
+
+                58. Provide your mobile phone number to the Cosmos Authority in package booking as you may need to be
+                contacted by Cosmos in case of any emergency. Inform the Cosmos Authority if the number is lost for any
+                reason.
+
+                59. Save the Tour Confirmation Letter and Ticket at your own risk.
+
+                60. Breakfast is provided by the hotel authorities in three-star quality hotels. From 8:00 a.m. to 9:00
+                a.m. / 9:30 p.m. If you have to leave the hotel at 5:00 am or 6:00 am due to bus / train / ship / plane
+                for a tour, Cosmos Holiday will not be responsible for not having breakfast.
+
+                61. Internationally, hotel check-in time starts at 12 noon and check-out time at 11.30 am. However, in
+                some countries, hotel check-in time is 2 pm and check-out time is 11:30 am (for example, Singapore,
+                Malaysia and some European countries). If the plane arrives in the morning or in the morning, you will
+                have to sit in the hotel lobby until check-in time in all those countries. Similarly if your bus or
+                flight return in evening or night you have to check out between 11:30am to 12:00pm from the hotel.
+
+                62. If you miss any connecting flight we are not liable.
+
+                63. Most Airlines tickets are 100% non-refundable, non-changeable, and can’t be reissue after travel
+                date but in this case Airlines rules will be followed. In certain cases, where the airline may allow
+                cancellations, a credit may be valid towards a future ticket purchase by the same traveller on the same
+                airline. Usually the credit issued by the airline supplier has a specific expiration date, after which
+                it cannot be used. We encourage you to discuss additional restrictions attached to your credit with a
+                customer service agent. In addition to airlines rule and policy Cosmos Holiday will impose a service
+                charge which may vary case to case. BDT 100 will be charged as service charge in addition to airlines
+                fees for Date Change, Flight Cancel, Re-Issue Baggage Add. in Bangladesh Domestic Sector. BDT 300 will
+                be charged as service charge in addition to airlines fees for Date Change, Flight Cancel, Re-Issue,
+                Baggage Add. in International Flight Sector.
+
+                64. Clients can book tickets all over the world using our state-of-the-art app and website. The client
+                can use any local or international debit or credit card to pay for the flight after booking from the
+                Website or App.
+
+                65. The refund amount will be disbursed after deducting the Cosmos Holiday service fee. Please note that
+                it takes a minimum of 10-12 bank working weeks to complete the refund process. This is not applicable
+                for non-refundable tickets. Cosmos Holiday convenience fee is non-refundable for online purchases. In
+                case of cancellation of Bangladesh Biman Airlines flight, the refund will be processed within a minimum
+                of 12 bank working weeks as per airlines policy.
+
+                66. For cancellation by Airlines (International), Cosmos Holiday will not charge any additional fees.
+                For cancellation by Airlines (Domestic), Cosmos Holiday will not charge any additional fees.
+
+                67. For cancellation and refund, we always follow the airline's refund policy. The airline solely holds
+                the right to change any policy. Cosmos Holiday has no control over the airline's policy. If airlines
+                increase the fare of a ticket during the booking period, a client has to pay the additional amount, else
+                we will refund the paid amount.
+
+                68. The refund for Saudia Airlines flights will be processed within a minimum of 12 bank working weeks
+                as per airlines policy. In the case of Air India half portion flight refund, the refund will be
+                processed within a minimum of 12 bank working weeks as per airlines policy. In case of changing the date
+                of your flight, we first look into that particular airline's policy.
+
+                69. In case of date change/re-issue of the ticket for a child who will be crossing the child age to
+                adult (as per airline policy) in the new travel date, a new charge of the ticket will be the difference
+                of airfare, plus a date change fee of an adult along with any other charges applicable as per airline
+                policy. International check-in counters close 1.30 hours before flight time & domestic counters close 1
+                hour before the flight time. If any airlines withdraw their business we are not liable or responsible if
+                you have purchased ticket from the Cosmos Holiday or This Website hence we will try our best to support
+                you.
+
+                70. If your itinerary includes flights operated by more than one airline, please read carefully each
+                such airline's terms and conditions, which can be found on each such airline's website. Each such
+                airline will have its own restrictions, rules and fees. If one of these flights is affected by an
+                airline change (e.g. cancellation or rescheduling) that causes a Customer to make changes to the other
+                flight, the Customer may be responsible for any fees or ticket cost incurred for making changes to the
+                unaffected flight. Such airlines may charge their own fees for changes, refunds, or if exchanges are
+                requested. You are responsible for complying with each airline's terms and conditions, which may differ
+                (for example, check-in times and limits on baggage size/weight). It is advisable you print your outbound
+                and return portions of your e-ticket confirmation for all flights prior to travelling. You may be asked
+                for proof of your return ticket at check-in.
+
+                71. For Air Ticket, you have agreed to your corresponding Airlines Terms & Conditions.
+
+                72. For Hotel Reservation, you have agreed to your corresponding Hotel Terms & Condition.
+
+                73. For Visa related issue, you have agreed to every restriction/policy/mandatory travel guideline
+                provided by corresponding country.
+
+                74. Price, Service Charge can be changed at any time.
+
+                75. You have agreed that if any kind of issue arise that have relationship with Cosmos Holiday or this
+                website, we Cosmos Holiday or this website owner will solve the issue if possible. In that case
+                additional service charge may applicable and it will vary case to case.
+
+                76. For payment issue you have agreed to SSLCOMMERZ Terms and Conditions. (link:
+                https://signup.sslcommerz.com/term-condition)
+
+                77. We may change the site and these Terms at any time, in our sole discretion and without notice to
+                you. You are responsible for remaining knowledgeable about these Terms. Your continued use of the site
+                constitutes your acceptance of any changes to these Terms and any changes will supersede all previous
+                versions of the Terms. Unless otherwise specified herein, all changes to these Terms apply to all users,
+                including those enrolled before the date the changes take effect. Furthermore, we may terminate this
+                agreement with you under these Terms at any time by notifying you in writing (including by email)
+                and/or, if you are a registered user, by cancelling your account and your access to your account.
+
+                78. If there is any special software or cookies on the seller's website, the buyer should be informed in
+                advance.
+
+                79. As per the Guidelines, digital commerce platforms are required to obtain prior permission of the
+                buyer in case of obtaining any personal data by providing the reason for which the data is being
+                obtained, where it shall be preserved, how it shall be processed and the purposes for which it shall be
+                used. This may be done by including a "check-box” of the Terms and Conditions during checkout in the
+                website.
+
+
+
+                Other Terms and Conditions
+
+                Passports & Visas
+
+                All travellers must have a valid passport for international travel and most of the countries require at
+                least 6 months validity from the date of return and some countries require a machine-readable passport.
+                When assisting with an international travel booking, we will assume that all travellers on the booking
+                have a valid Bangladeshi passport. If this is not the case, you must let us know. It is important to
+                ensure you have valid passports, visas and re-entry permits which meet the requirements of immigration
+                and other government authorities. Any fines, penalties, payments or expenditures incurred as a result of
+                such documents not meeting the requirements of those authorities will be your sole responsibility
+                (except to the extent caused by fault on our part). If you need more information regarding visas,
+                passports and other travel document requirements for your trip, please contact your Travel Manager.
+
+
+
+                Hotel
+
+                The Platform is a hotel search engine that provides users with comparisons for different offers for
+                hotel rooms. Cosmos Holiday does not provide, own or control any of the hotel services and products that
+                you can access through our Platform. You have agreed that Hotel rate may change at any time, their
+                service may not up to standard and also Cosmos Holiday or Website Owner is not liable for any damage,
+                loss or anything else.
+
+
+
+                Seating and Meal Preferences
+
+                Seating and meal preference requests are not guaranteed by airlines and may be changed without notice.
+                Your preferences are maintained via your membership details with the specific airline. Please ensure
+                your preferences are up to date to ensure reward points, seating and meal requirements are current.
+
+
+
+                Airport Security and Carry-on Baggage on International Flights
+
+                Airlines and Country Airport term and conditions will be applied. You have to cross check by yourself
+                about this issue. Cosmos Holiday or this Website Owner is not liable for that.
+
+
+
+                Prohibited Activities
+
+                Services offered to you through our website or any of our representatives, are only applicable for
+                personal and non-commercial use. You are not allowed to sell, resell, copy, or reproduce any services
+                obtained by us unless you have a B2B partnership with us.
+
+                You are also agreeing not to:
+
+                · Use the contents of this website anywhere else.
+
+                · Make any false or fraudulent reservation.
+
+                · Copy any part of this website without proper permission.
+
+                · You are prohibited to search same things again and again within short time, in this case your Agent ID
+                or Customer ID can be banned without prior notice.
+
+                If Cosmos Holiday finds any suspicious, or fraudulent booking, booked under a false name, we reserve the
+                right to cancel the booking immediately and block the email, phone number that is associated with that
+                particular account from our website. Cosmos Holiday reserves the right to take legal action if needed,
+                in case of any fraudulent activity. If you think your account has been blocked by any mistake, we
+                request you to contact our customer service with proper verifiable documents.
+
+
+
+                Ticket Delivery
+
+                Most tickets are electronic (e-Tickets), however with certain itineraries where an e-Ticket is not
+                available a paper ticket will be issued. If an e-Ticket could not be issued for a particular reservation
+                or if a delivery was being made of another product or service, Cosmos Holiday will send the paper
+                ticket, product or service through a secure mode of delivery (a reputable carrier company). Cosmos
+                Holiday does not assume any responsibility for the fault of the delivery company. We will attempt to
+                redeliver but do not provide any guarantees for redelivery on time. If you provide an incorrect address,
+                then you may have to pay excess fees to the delivery company for alteration of the address. If an
+                e-Ticket is generated the ticket information will be available on the Site.
+
+
+
+                Credit/Debit Card Payments
+
+                a. All credit cards must have a verifiable Bangladesh or other country billing address.
+
+                b. All bookings and fares are not guaranteed until ticketed by the supplier. For hotels, flight, and
+                vacation packages, bookings are not guaranteed unless you receive a confirmation number by email.
+
+                c. When you submit your credit or debit card for a purchase, we request an authorization for the amount
+                of your anticipated transaction (placing a temporary "hold" on the funds). If for some reason we are
+                unable to confirm your booking, you will not be charged and we will request that such hold be released
+                by your credit or debit card bank; until then, funds subject to the hold will not be available to you
+                for other purposes.
+
+                d. If your credit card is declined for any reason, we will notify you within 72 hours. Simply submitting
+                the credit card does not automatically guarantee ticketing.
+
+                e. Cosmos Holiday bears no responsibility in the event your credit or debit card is not approved or
+                charged.
+
+                f. There can be many reasons why your credit or debit card may not have been approved or charged.
+                Examples of these maybe: airline could not confirm the booking, fare increased since payment information
+                was submitted and prior to ticketing; or sufficient funds not available on the credit card. In such
+                instances where the fare may have increased, you will be provided with alternate options and you have
+                the right to cancel the booking at no cost to you. When the booking is ticketed at the cost originally
+                quoted to you the ticket becomes non-refundable and non-cancellable.
+
+                g. Cosmos Holiday uses stringent safety measures for credit card payment processing. Fraudulent
+                transactions, if any, are reported to airport security, airlines and other law enforcement.
+
+                h. You agree to be liable for any and all credit card payments and you agree not to dispute charges
+                after the purchase has been made and your tickets and/or other products have been delivered by email
+                confirmation or have been shipped to you. You agree to reimburse Cosmos Holiday in cases of charge back
+                or credit card disputes where you have genuinely purchased a service on our website.
+
+                i. Most credit card transactions over the phone to our Customer Service Department are recorded and are
+                available as evidence in case of any dispute.
+
+                j. Online credit card transactions are authorized at the time a user or anyone acting on their behalf
+                accepts these Terms & Conditions and continues with the purchase.
+
+                k. When certain transactions are determined to be high risk by our systems, we will not process such
+                transactions unless our credit card verification team has determined that it's safe to process them. In
+                order to establish validity of such transactions, we may contact you or your bank.
+
+                l. After the full payment, due to an unforeseen and uncontrollable issue if it is not possible to hand
+                over the product within the stipulated time, the company will notify the customers by phone, SMS, e-mail
+                or other means within 48 hours of the placement of orders. The money has to be refunded in full within a
+                maximum of 72 hours for any delivery failure. Company must not force the clients directly or indirectly
+                to buy any other product in exchange.
+
+                m. If the buyers make the payment in advance through debit and credit cards, bank transfer or mobile
+                banking, the money has to be refunded in full in the same medium the payment was received within a
+                maximum of 10 days for any delivery failure within the stipulated time. In this case, if any charge is
+                applicable, the seller will be responsible to pay for it. The seller will notify the buyers by phone,
+                SMS, e-mail or other means regarding the refund. Moreover, the seller cannot refund more than the amount
+                the buyer has paid earlier. The time line could be relaxed if the buyer fails to receive the product or
+                service in stipulated time.
+
+
+
+                Credit Card Declines
+
+                If your credit card declines at the time of processing your transaction, we will make all efforts to
+                notify you by email within 72 hours. The transaction will not be processed if your credit card has been
+                declined. The fare and any other booking details are not guaranteed. If your credit card declines at the
+                time of processing your transaction, we will make all efforts to notify you by email within 72 hours.
+                The transaction will not be processed if your credit card has been declined. The fare and any other
+                booking details are not guaranteed.
+
+
+
+                Discount Coupon Code or Promo Codes
+
+                a. Cosmos Holiday may issue certain promo codes which are generally valid for online travel reservations
+                and bookings, though some specific Cosmos Holiday promo codes may only be used over the phone through
+                our customer service centre.
+
+                b. We invite you to sign up for our newsletter to receive promo codes by email.
+
+                c. Cosmos Holiday promo codes are non-transferable, cannot be sold or bartered and hold no cash value.
+
+                d. To receive the value of the discount, a valid promo code must be entered in the promo code link on
+                payment page. If the code is not entered the discount cannot be redeemed and has no value. Due to
+                technical problems, if the code is not accepted or a coupon link is not present, you have the right to
+                not purchase the product or service, but in no circumstances will the credit be applied after purchase
+                is made.
+
+                e. Cosmos Holiday promo codes offers may be revised or withdrawn any time without notice, even if other
+                websites are displaying the same offers.
+
+                f. For all technical errors there is no recourse except you have the right to not make the purchase.
+
+                g. If the offer is withdrawn, the promo code becomes invalid and the Site and system will not accept the
+                promo code when entered. This is final and you have the right at that point to continue with original
+                price or not continue with your purchase.
+
+                h. The final price displayed (with or without promo code) will be the amount billed/charged and there
+                will be no credits/discounts applied after purchase for absolutely any reason.
+
+                i. Cosmos Holiday promo codes may not be combined with another offer.
+
+                We reserve the right to decline any transaction that may have had an error in promo code value even
+                after the booking is created and booking receipt is issued.
+
+
+
+                Promo Code Terms
+
+                The promo code offer is on our transaction service fees only, Discount varies based on the transaction
+                service fees charged for that ticket or travel reservation, and the value of discount will be up to the
+                amount of the service fees charged for that transaction or the promo code's value per transaction
+                whichever is less. You must use the promo code at check-out to redeem this offer. This offer may be
+                revised or dis-continued without prior notice.
+
+
+
+                Travel Insurance
+
+                We strongly recommend that you take out appropriate travel insurance to cover your travel arrangements.
+                Travel Insurance is also strongly recommended by the Department of Foreign Affairs and Trade for all
+                overseas travel. Your Travel Manager can provide you with general information about the travel insurance
+                options available to you. It is your responsibility to ensure you have adequate travel insurance for
+                your journey. To take out travel insurance through us, please contact your Travel Manager.
+
+
+
+                Health
+
+                You must ensure that you are aware of any health requirements and recommended precautions relevant to
+                your travel and ensure that you carry all necessary vaccination documentation. In some cases, failure to
+                present required vaccination documentation (e.g. proof of Yellow Fever vaccination) may deny you entry
+                into a country. We recommend that you consult with your local doctor, travel medical centre or
+                specialist vaccination clinic before commencing your travel. For more information, please contact your
+                Travel Manager.
+
+
+
+                Amendment and Cancellation Fees
+
+                Cancelled bookings may incur charges. These charges can be up to 100% of the cost of the booking,
+                regardless of whether travel has commenced. Fees and extra charges may also apply where a booking is
+                changed and when tickets or documents are re-issued. Where we incur any liability for a supplier
+                cancellation fee or charge for any booking which you cancel, you agree to indemnify us for the amount of
+                that fee or charge. Where you seek a refund for a cancelled booking for which payment has been made to
+                the supplier, we will not provide a refund to you until we receive the funds from that supplier.
+
+
+
+                Taxes
+
+                Airline taxes are subject to change and are confirmed at the time your airline ticket is issued or
+                re-issued. There may also be a local tax charged at some airports.
+
+
+
+                Agency
+
+                We act as an agent only. We sell various travel related products as agent on behalf of numerous
+                transport, accommodation and other service providers, such as airlines, coach, hotel, rail ticket, Bus
+                Ticket and cruise line operators, and as agent for all of our wholesalers. Our obligation to you is to
+                (and you expressly authorise us to) make travel bookings as agent on your behalf and to arrange relevant
+                contracts between you and travel service providers. We have no responsibility for these services nor do
+                we make or give any warranty or representation regarding their standard. All bookings are made on your
+                behalf subject to the terms and conditions and limitations of liability imposed by these service
+                providers. We can provide you with copies of the relevant service provider terms and conditions on
+                request. Your legal recourse for travel services is against the specific provider and, except to the
+                extent a problem is caused by fault on our part, not against us. Specifically, if for any reason
+                (excluding fault on our part), any travel service provider is unable to provide the services for which
+                you have contracted, your remedy lies against the provider and not with us.
+
+
+
+                Liability
+
+                To the extent permitted by law, we do not accept any liability in contract, tort or otherwise, for any
+                injury, damage, loss (including consequential loss), delay, additional expense or inconvenience caused
+                directly or indirectly by the acts, omissions or default, whether negligent or otherwise, of third party
+                providers over whom we have no direct control, force majeure or any other event which is beyond our
+                control or which is not preventable by reasonable diligence on our part. Our liability will also be
+                limited to the extent that any relevant international conventions limit the amount of compensation which
+                can be claimed for death, injury, or delay to passengers and loss, damage and delay to luggage. Under
+                circumstances where our liability cannot be excluded and where liability may be lawfully limited, such
+                liability is limited to the remedies required of us under applicable consumer laws.
+
+
+
+                Special Requirements
+
+                Please liaise with your Travel Manager regarding any special requirements you may have for your travel
+                arrangements such as special meal and seating requests.
+
+
+
+                Travel Documents:
+
+                Travel documents include (without limitation) airline tickets, hotel vouchers, tour vouchers or any
+                other document (whether in electronic form or otherwise) used to confirm an arrangement with a service
+                provider. Travel documents may be subject to certain conditions and/or restrictions including (without
+                limitation) being non-refundable, non-date-changeable and subject to cancellation and/or amendment fees.
+                Travel documents cannot be transferred to another person to use. All airline tickets must be issued in
+                the name of the passport/photo identity holder. An incorrect name on a booking may result in an
+                inability to use that booking and the booking being cancelled. Please review your travel documentation
+                carefully and advise us immediately of any errors in names, dates and timings. You must ensure you have
+                all your travel documents and e-tickets prior to travel. Please let us know if you believe you have not
+                received any required documentation.
+
+
+
+                Privacy Policy
+
+                We are committed to protecting your personal information and agree to handle your personal information
+                in accordance with our Privacy Policy. By providing personal information to us, you agree that our
+                Privacy Policy will apply to how we handle your personal information and you consent to us collecting,
+                using and disclosing your personal information as detailed in our Privacy Policy. In particular, you
+                agree that in certain circumstances (such as where you request us to book international travel for you),
+                we are permitted to disclose your personal information to overseas recipients. Such recipients may
+                include the overseas travel service providers (e.g. airlines, accommodation or tour providers) with whom
+                you make a booking. These travel service providers will in most cases receive your personal information
+                in the country in which they will provide the services to you or in which their business is based. We
+                may also disclose your personal information to our overseas related entities and to service providers
+                who perform services for us within and outside of India. Generally, we will only disclose your personal
+                information to these persons in connection with facilitation of your travel booking and/or to enable the
+                performance of administrative and technical services by them on our behalf. Where we disclose your
+                personal information to any person (including all overseas recipients), you agree that we will not be
+                required to ensure that person’s compliance with Indian privacy laws or otherwise be accountable for how
+                they handle your personal information. When used above, “disclose” includes to transfer, share, send, or
+                otherwise make available or accessible to another person or entity.
+
+
+
+                Governing Law
+
+                If any dispute arises in relation to the agreement between you and us, the laws of Bangladesh will
+                apply. You irrevocably and unconditionally submit to the exclusive jurisdiction of the courts of
+                Bangladesh, and waive any right that you may have to object to an action being brought in those courts.
+
+
+
+                Immigration-Related Information:
+
+                Necessary immigration documents such as NOC, GO, RT-PCR Report, and Covid-19 Vaccine Certificate (Triple
+                Dose) must be kept both in original and photocopy form (multiple copies for safety).
+
+                Prior to traveling to any country (within 24/72 hours depending on the destination), it is the
+                individual's responsibility to fill out the Arrival and Registration Form on the website or mobile app.
+                After completion, print the feedback letter (in PDF format) and retain it (multiple copies for safety),
+                and also capture a screenshot on your mobile device.
+
+                Before returning to your home country at the conclusion of your trip (approximately 72 hours prior), you
+                are required to fill out a Health Declaration Form Bangladesh. Print the feedback letter (in PDF format)
+                and keep it with you or store it on your mobile device (if necessary).
+
+                In the event of an increase in government-imposed travel taxes, the additional amount will be borne by
+                the traveler as an increased tax burden.
+
+                Transport and Travel Related Information:
+                5. Travel dates are contingent upon the specified schedule and availability of flights/bus/trains/ships.
+                6. "Cosmos Holiday" assumes no liability for any delays or cancellations of flights/bus/train/ship in
+                any package tour.
+                7. If there is a delay in departing from the transport terminal (bus/train/ship/air), it must be
+                immediately communicated to 'Cosmos Holiday' authorities via email/text message/WhatsApp. If
+                transportation is delayed at the destination (arrival terminal) due to pre-arranged time, in that case,
+                the esteemed customer will have to arrange transportation to reach the destination at their respective
+                hotel. 'Cosmos Holiday' will not bear any additional cost for this. However, if the cause and time of
+                the delay are known in advance, 'Cosmos Holiday' will attempt to delay the receiving transport.
+                8. Indian embassy fees, border fees, and all expenses including entry fees for T, sightseeing, travel
+                taxes, etc., in the case of travel to India/Nepal/Bhutan by road, should be borne by the traveler.
+                9, 'Cosmos Holidays' authorities are not responsible and cannot provide any assistance in case of loss
+                of goods due to your negligence.
+                10. Expenses for hospital/ambulance/medicine in the event of unexpected illness or accidents involving
+                buses/trains/planes will be borne by the esteemed customer/family. In the unfortunate event of untimely
+                death, the customer's family will have to bear all expenses and necessary arrangements to repatriate the
+                deceased's body to the country. For this purpose, two close or blood-related individuals from the
+                traveler's family must be nominated as guarantors to bear all these responsibilities.
+                11. 'Cosmos Holidays' is not responsible for seat assignments, whether in the front or back, in relation
+                to flight/bus/train/ship tickets.
+                12. When booking tickets for flights/buses/trains/ships with connections or alongside another mode of
+                transport, please be responsible for knowing the transit time and exercise caution during the tour.
+                Otherwise, 'Cosmos Holiday' will not be liable for any cancellations/postponements/advancements of
+                flights/buses/trains/ships/hotels and other scheduled facilities. In such cases, all affected services
+                must be repurchased immediately at the current market price, with the customer bearing the additional
+                cost.
+                13. If additional accommodation and meals are required due to changes in the schedule of
+                flights/buses/trains/ships (cancellations/postponements/advancements of any of the scheduled times), the
+                customer must bear the cost through additional payment.
+                14. In private/group tours, if you wish to have or have any meal outside the designated meal, payment
+                must be made immediately by the traveler. Note that no mineral water or any soft drink is provided or
+                served with the meal.
+                15. In the case of group tours, passengers who have paid the full fare in advance can choose bus seats
+                for inter-country bus travel (subject to seat availability). In internal tours, seat rotation is
+                implemented to ensure fairness and equal opportunities for all group members.
+                16. In private or group tours, all travelers must arrive at the terminal of the plane/bus/train/ship
+                within the scheduled time. Also, they must arrive before the scheduled departure time for daily
+                sightseeing tours. 'Cosmos Holidays' is not responsible for non-arrival or missed transportation. If a
+                traveler misses the bus/train/air/ship during a change of destination (from one city to another), they
+                must reach the destination at their own expense to continue the tour.
+                17. Regularly check the day-to-day travel information on all tours and take necessary actions
+                independently. It is not the guide's responsibility to wake someone up or carry them to the vehicle, so
+                travelers should take initiative to ensure a pleasant trip without inconveniencing others.
+                18. For any land package tour (included in private/group tours), each person is allowed one bag weighing
+                a maximum of 30 kg and measuring 25-29 inches in length and 14-18 inches in width, and one hand-carry
+                bag weighing a maximum of 7-10 kg with dimensions of 22 inches in length, 18 inches in width, and 10
+                inches in height. Extra charges apply for additional weight or oversized baggage, requiring a larger
+                vehicle.
+                19. In different tour packages (Private Car, Jeep, Microbus, Bus, Tempo Traveler, Ferry, Ship, Dinner
+                Cruise, Dhow Cruise, Marine Cruise), seat allocation is not under 'Cosmos Holidays' control, therefore
+                'Cosmos Holidays' shall not be liable for any defects in the provided services. However, immediate
+                written notification through email/text message/WhatsApp allows 'Cosmos Holiday' authorities to make
+                efforts to resolve the issue.
+                20. In travel to hilly/difficult areas where lunch or dinner will be provided at any quality hotel, some
+                time may be required for management.
+
+                Office and other documents:
+                21. During office hours (10:00 am to 6:30 pm), except on public holidays, collect all necessary travel
+                documents at your own risk. 'Cosmos Holidays' will not be liable if the office or office building is
+                closed, resulting in the inability to deliver your passport or missing your flight/bus and canceling
+                other related activities/tours.
+                22. Before leaving 'Cosmos Holiday' office, carefully check that your name, date, time, and place are
+                correct on the flight ticket. No objections will be entertained after the documents are handed over to
+                you.
+                23. Before departure, please take all services related to your tour (included and excluded) in writing
+                (tour confirmation letter) to avoid any inconvenience during the trip. Oral assurances or instructions
+                are not valid, and no services outside the contract are possible.
+                24. Cosmos Holidays does not endorse purchasing advance tickets before acquiring the visa. If someone
+                buys tickets before obtaining the visa and subsequently fails to acquire it, the responsibility lies
+                with the buyer.
+                25. Tickets and other documentation for certain tours, including group tours (bus, train, Jahang Air
+                tickets, various vouchers), will be provided either one day before the tour commences or on the date of
+                travel.
+                26. Provide two active phone numbers (one personal and one emergency, connected via WhatsApp) to Cosmos
+                Holiday authorities when booking or purchasing a package. You may need to communicate with Cosmos
+                Holiday authorities in case of emergencies or to confirm your travel. If the provided number is lost or
+                the registration is canceled, promptly inform the Cosmos Holiday authorities and provide an alternate
+                number.
+                27. Behave courteously with service-oriented individuals such as guides, waiters, and drivers at hotels
+                during private/group tours, and offer them respectful tips or gratuities at your own discretion. This
+                will enhance your image and the reputation of the country.
+
+                Prohibition and Legal Policy:
+                28. Consumption of intoxicants or alcohol (liquor) and engagement in any anti-social activities are
+                strictly prohibited during the tour. If found guilty of such actions, the tour will be canceled with the
+                consensus of all tour members, and travel expenses will be fully refunded.
+                29. During any package tour, especially group tours, participants must not carry small parcels or
+                luggage for other group members, guides, drivers, or strangers. Cosmos Holiday authorities will not bear
+                responsibility for any illegal items found in carried luggage, nor for any ensuing legal complications.
+                Individuals found in possession of illegal goods will be expelled from the group.
+                30. Tourist guides hold an honorary position. Some guides, alongside their educational roles, may work
+                part-time or out of passion. Therefore, interact with them politely and refrain from any embarrassing
+                behavior.
+                31. Avoid behaviors that compromise your personality or ostracize you during a group tour. For instance,
+                refrain from showing excessive interest in other group members, knocking on room doors, offering
+                unwanted food, suggesting shopping trips, or taking photos/videos without permission.
+                32. Always adhere to the instructions of the group leader, follow the guide, and inform the group leader
+                of your whereabouts. Ensure timely completion of sightseeing activities and adherence to tour schedules
+                to avoid inconveniencing others. If someone fails to arrive within the specified time, the group will
+                proceed without them, and no objections will be entertained.
+                33. In the realm of breakfast arrangements, it is not permissible to gather additional food items
+                tailored to individual needs in packets or bags.
+                34. In the event of alterations to travel dates (tour plans) post-package booking, a minimum service
+                charge of Rs 2,500 per person or higher, based on the package, must be settled. Additionally,
+                cancellation charges for hotel bookings and a minimum of 25% or more of the total package price must be
+                paid as an extra fee.
+                35. When making payments, carefully review the receipt and ensure the preservation of the original copy.
+                'Cosmos Holidays' retains full authority to modify or cancel packages at any given time.
+                36. Customers opting for budget packages are not entitled to raise any objections. Budget packages are
+                structured with minimum standards for hotels, transportation, and other services, hence ensuring cost
+                efficiency across all aspects, be it hotel quality, location, or mode of transportation.
+                37. Amendments to air tickets or any segment of the tour (tour reduction/extension/date change) are not
+                permitted during the tour. If feasible, any extra charges incurred due to tour-related changes require
+                prior consent from 'Cosmos Holiday' authorities, failing which 'Cosmos Holiday' disclaims responsibility
+                for any ensuing complications.
+                38. Prior to booking a package, it is imperative to thoroughly comprehend both the inclusions and
+                exclusions of the package, meticulously reading through the printed terms and conditions. Any claims or
+                objections post-booking will not be entertained.
+                39. Following the purchase/booking of a tour package, during peak seasons (Eid, Puja, Christmas, New
+                Year, Special Holidays), or instances of a surge in the dollar rate leading to increased fares for
+                hotels, flights, buses, trains, and ships due to various factors, customers will be subject to
+                additional charges.
+                40. Changes to travel dates or tour plans cannot be facilitated via telephone/mobile. In such instances,
+                customers must either visit the office directly or communicate in writing via email/text
+                message/WhatsApp.
+                41. All tours (international) include airport pick-up and drop-off at specific times. For flights
+                arriving between 10:00 PM and 6:00 AM due to delays or changes, additional charges for late-night
+                receptions or waiting until the scheduled time at the airport (Airport Receive-Drop Time) will be
+                applicable.
+                42. For package tours to various European countries including Maldives, Sri Lanka, and Umrah packages,
+                the air ticket and package price must be paid in full upfront, which is non-refundable.
+                43. Settlement of all dues payable to the bank through checks (clearance) is required 10-21 days prior
+                to the commencement of the travel period (bank working days).
+                44. Payment for travel package booking must be settled in full or 75% of the package value within 3 to 7
+                days of booking, with the remaining balance to be paid. Immediate full payment is required for near-term
+                travel dates. Failure to pay outstanding dues may result in price increases (for purchased packages,
+                hotels, tickets, etc.) or the cancellation of all services.
+                45. Tickets and hotel/tour vouchers will be issued within 72 hours prior to travel, following the full
+                payment of the contract to confirm the travel arrangements.
+                46. The authority shall not be liable in the event of a reduction/change/cancellation/extra night stay
+                of the tour due to any natural calamity, political disturbance, or mechanical fault of the transport.
+                All expenses incurred shall be borne by the customer.
+                47. If there is a change in the number of travelers after the package price is determined, the package
+                price may increase accordingly.
+                48. If any traveler is found with illegal goods during the scheduled package tour, resulting in police
+                involvement, the tour for that individual will be immediately canceled. Cosmos Holidays will not assume
+                any responsibility, and the entire amount payable against the package will not be refunded.
+                49. In hilly areas, air-conditioned (AC) vehicles will not be operational.
+                50. Any travel-related issues must be promptly reported to the local agent of Cosmos Holidays or
+                directly to the authorities of Cosmos Holidays. Otherwise, no complaints will be entertained.
+                51. For online bookings/purchases, no date changes, cancellations, or refunds are possible for
+                hotel/tour packages.
+                52. Room sharing (Staying) without a valid family identity is not permitted.
+                53. Select the services included in your package and carefully choose your hotel. Familiarize yourself
+                with the hotel's quality beforehand by visiting their website. No complaints will be entertained during
+                the journey.
+
+                Accommodation Related Information:
+                54. Maintain a cheerful disposition and mutual understanding with unfamiliar roommates in twin or triple
+                sharing rooms during group tours. Keep valuable items (both domestic and foreign currency, jewelry,
+                mobile phones, cameras, laptops, etc.) under your own supervision. Any theft or loss of belongings will
+                not be the responsibility of Cosmos Holidays. To mitigate unpleasant situations (if you prefer not to
+                take risks), consider using a single room for an additional fee.
+                55. Twin sharing rooms are typically utilized for group tours. In cases where a customer is traveling
+                alone or in odd-numbered groups, room allocation will be subject to certain conditions. These conditions
+                are as follows:
+                (a) If traveling alone, Cosmos Holidays will attempt to pair you with a same-gender roommate; however,
+                if unsuccessful, you will be charged for a single room.
+                (b) In instances where there are three single customers (of the same gender), triple sharing rooms will
+                be allocated. Since triple sharing rooms have one mattress bed, the allocation of beds will be
+                determined through arbitration or lottery among the occupants. Otherwise, two occupants will be assigned
+                to twin sharing rooms, and the remaining individual will have the option to purchase a single room for
+                an additional fee. All decisions, including lottery selections, will be made by Cosmos Holidays.
+                56. Cosmos Holiday does not assume responsibility for the quality, service, or location of hotels.
+                Please conduct thorough research on the preferred hotel and its location on the website at your own
+                discretion.
+                57. International hotel check-in typically begins at 3/4 PM, with check-out at 11:00 AM. If you arrive
+                early in the morning or depart in the morning, you may wait in the hotel lobby until the designated
+                check-in time (which is usually at 12:00 PM or 4:00 PM). Similarly, if your return transportation is
+                scheduled for the afternoon, evening, or night, ensure that check-out is completed by 11:00 AM. In such
+                cases, you may wait in the hotel lobby or leave your luggage and explore outside.
+                58. Complimentary breakfast is usually provided by the hotel between 7:00 AM/8:00 AM and 9:00 AM/9:30
+                AM. Cosmos Holidays will not be held accountable for missed breakfast in the event of early departure
+                from the hotel at 5:00 AM/6:00 AM due to bus/train/ship/air travel for any tour.
+                59. In hotel rooms, an extra mattress is often provided for triple sharing arrangements, which may
+                reduce the available space. Cosmos Holidays is not responsible for this. If desired, you may opt for a
+                larger room or a family suite for an additional fee, subject to negotiation.
+                60. In many cases, hotel rooms may have reduced space. Cosmos Holidays is not responsible for this
+                occurrence.
+                61. Bathroom and room amenities are typically provided free of charge in hotel rooms; however, there may
+                be exceptions. Cosmos Holidays will not be held responsible if these items are not provided by the
+                hotel.
+                62. When leaving the hotel, do not solely rely on hotel staff to transport luggage to and from the
+                vehicle, as this is done at your own risk. Similarly, when using bus/train/ship transportation, handle
+                luggage on your own to avoid any inconvenience. Cosmos Holidays will not be liable for any carelessness
+                on your part, and it is essential to take every precaution to prevent any inconvenience to other tour
+                customers due to your actions.
+                63. If you wish to opt for a single room in the hotel (for private/group tours) and desire upgrades or
+                changes in location, there will be an increase in the package price. In such cases, cancellation charges
+                for pre-booked hotels will be applicable.
+                64. Should you require various amenities in the hotel room (such as bathroom kits, minibar/fridge,
+                kettle, oven, hair dryer, TV, safety box, room heater), please notify the hotel reception or the hotel
+                management and obtain detailed information. Hotel services are guaranteed by the hotel authorities. If,
+                for any reason, the hotel authorities fail to provide these facilities, Cosmos Holiday will not be held
+                responsible.
+                65. A lead time of 16 to 72 hours will be applicable for residential hotel reservations. In the event of
+                the specified hotel not being available, Cosmos Holidays reserves the right to substitute the
+                residential hotel with an equivalent accommodation, and any additional costs incurred in changing to the
+                equivalent hotel shall be borne by the esteemed customer.
+                66. For private or group tours, Cosmos Holiday typically provides standard rooms (starting category) in
+                hotels, which may vary in size from hotel to hotel. Cosmos Holiday is not accountable for such
+                variations. Depending on negotiations, premium suites, family suites, super deluxe, etc., category rooms
+                can be provided for an additional cost.
+                67. Rooms are allocated by hotel/ferry/ship authorities based on availability and number. Confirming
+                details of these rooms (such as room number, floor number, room view) from Bangladesh is not feasible,
+                and requests from esteemed customers in these regards cannot be accommodated.
+                68. The price for hotel reservations made online is non-refundable.
+
+                Terms & Conditions:
+                69. To travel to any international destination, your passport must have a minimum validity of 06 months
+                from your planned date of return.
+                70. Minimum Two Person must be required for select packages.
+                71. The passenger's names in the booking form should be exactly as per passports. Cosmos Holiday will
+                not bear any liability for the name change fee, if incorrect names and ages have been added at the time
+                of booking.
+                72. Please note that once your booking is confirmed, you will receive an email as well as an SMS on your
+                registered mobile number confirming your booking.
+                73. Booking rates are subject to change without prior notice.
+                74. Please note that these packages are customizable, which means that you will be able to make changes
+                to the itinerary/activity if you so desire. The final payment will be calculated as per the activities
+                reflected on the website which will be outlined in the confirmatory e-mail sent to you.
+                75. Hotel/Cruise Bed types are subject to availability in cases where options are given Example-
+                Double/Twin Bed or 1 Queen-size bed + 1 Single Sofa Bed/1 Single Sofa Bed (or Similar).
+                76. Some hotels may ask for a security deposit during check-in, which is refundable at check-out subject
+                to the hotels' policy.
+                77. In case your package needs to be cancelled due to any natural calamity, weather conditions etc.
+                Cosmos Holiday shall strive to give you the maximum possible refund subject to the agreement made with
+                our trade partners/vendors.
+                78. If payment is not made as per the schedule provided in the first booking confirmation e- mail,
+                Cosmos Holiday reserves the right to cancel the booking after attempting to get in touch with you.
+                Refunds would be as per the package cancellation policy.
+                79. The final payment will be calculated as per the activities reflected on the website which will be
+                outlined in the confirmatory email sent to you.
+                80. Please note that Day at Leisure/Free Day essentially implies that no sightseeing activities have
+                been included for that day.
+                81. The package price does not include special dinners or mandatory charges at the time levied by the
+                hotels during New Year and Christmas or any special occasions.
+                82. Kindly be on time for your activities, tours and transfers. Most countries are quite strict about
+                following a schedule.
+                83. For any paid activity which is non-operational due to any unforeseen reason, we will process a
+                refund & same should reach the guest within 30 days of processing the refund.
+                84. The activity changes are subject to availability and operational days, the itinerary might change
+                due to the same on the ground.
+                85. Cruise Gratuity & tourism taxes will be required to be paid directly unless mentioned/informed.
+                86. If your flights involve a combination of different airlines, you may have to collect your luggage on
+                arrival at the connecting hub and register it again while checking in for the onward journey to your
+                destination.
+                87. Cosmos Holiday reserves the right to modify the itinerary at any point, due to reasons including but
+                not limited to: Force Majeure events, strikes, fairs, festivals, weather conditions, traffic problems,
+                overbooking of hotels/flights, cancellation / re-routing of flights, closure of/entry restrictions at a
+                place of visit, etc. While we will do our best to make suitable alternate arrangements, we will not be
+                held liable for any refunds/compensation claims arising out of this.
+                88. Cosmos Holiday officials or representatives will NEVER ask you for your personal information i.e.
+                your credit/debit card details, passwords, PIN, CVV, OTP etc. Please do not share these details with
+                anyone over the phone, SMS, Whatsapp, email or any other source.
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- subscription  -->
+    <section class="subscription-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 text-center">
+                    <div class="subscription-card p-5 rounded-5 shadow-lg bg-light">
+                        <h2 class="mb-3">Subscribe & Stay Updated</h2>
+                        <p class="mb-4">Get exclusive news, offers, and updates directly in your inbox.</p>
+                        <form class="subscription-form d-flex flex-column gap-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email"
+                                required>
+                            <button type="submit" class="btn btn-gradient btn-lg">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscription -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Contact Info -->
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <h5 class="mb-3"><i class="fas fa-map-marker-alt me-2"></i>Office Addresses</h5>
+                    <div class="contact-card">
+                        <h6>Dhanmondi (Head Office)</h6>
+                        <p>Plaza A.R. (4th Floor), House 2, Road 14, Dhanmondi, Dhaka-1209</p>
+
+                        <h6 class="mt-3">Banani Branch</h6>
+                        <p>Ahsan Tower (5th Floor), 56/1/2 Kamal Ataturk Avenue, Banani, Dhaka-1213</p>
+
+                        <h6 class="mt-3">Uttara Branch</h6>
+                        <p>Syed Grand Centre (7th Floor), Sector 7, Uttara, Dhaka-1230</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5 class="mb-3"><i class="fas fa-phone-volume me-2"></i>Contact Numbers</h5>
+                    <div class="contact-card">
+                        <h6>Visa Information</h6>
+                        <p>01901168272, 01313437888, 01940247935, 01708808385</p>
+
+                        <h6 class="mt-3">Air Ticket</h6>
+                        <p>0170880836, 01313437893, 01901168287</p>
+
+                        <h6 class="mt-3">Umrah & Packages</h6>
+                        <p>01708808370, 01708808374, 01901168284</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Bottom Grid -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Affiliations</h5>
+                    <div class="d-flex flex-wrap">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/IATAlogo.svg/100px-IATAlogo.svg.png"
+                            class="affiliation-logo" alt="IATA">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Bangladesh_Government_Seal.svg/100px-Bangladesh_Government_Seal.svg.png"
+                            class="affiliation-logo" alt="Gov">
+                        <img src="https://i.ibb.co/XsxDRCh/logo-3.png" class="affiliation-logo" alt="TOAB">
+                        <img src="https://i.ibb.co/pbzfZ7j/logo-4.png" class="affiliation-logo" alt="ATAB">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Credit Card Partners</h5>
+                    <div class="d-flex flex-wrap">
+                        <img src="https://i.ibb.co/Y7ZfWhV/scb.png" class="bank-logo" alt="SCB">
+                        <img src="https://i.ibb.co/JvhRbWj/sibl.png" class="bank-logo" alt="SIBL">
+                        <img src="https://i.ibb.co/Z6RpF7J/brac.png" class="bank-logo" alt="Brac">
+                        <img src="https://i.ibb.co/mCHByr4/ucb.png" class="bank-logo" alt="UCB">
+                        <img src="https://i.ibb.co/XySVMZ1/ebl.png" class="bank-logo" alt="EBL">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <div class="social-icons mb-2">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="small">&copy; 2025 Your Company. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.5/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
