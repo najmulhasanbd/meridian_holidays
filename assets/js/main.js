@@ -249,23 +249,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // package
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".package-card");
+if (typeof gsap !== 'undefined') {
+    const cards = document.querySelectorAll('.package-card');
 
     cards.forEach(card => {
-        gsap.set(card.querySelector(".overlay"), { y: "100%" });
+        const img = card.querySelector('.package-img');
+        const title = card.querySelector('.overlay h4');
+        const badges = card.querySelectorAll('.overlay .flex span');
 
-        card.addEventListener("mouseenter", () => {
-            gsap.to(card.querySelector("img"), { scale: 1.1, duration: 0.5, ease: "power3.out" });
-            gsap.to(card.querySelector(".overlay"), { y: "0%", duration: 0.5, ease: "power3.out" });
+        card.addEventListener('mouseenter', () => {
+            // Image slightly scale
+            gsap.to(img, { scale: 1.1, duration: 0.5, ease: "power2.out" });
+            // Title pop
+            gsap.to(title, { y: -5, scale: 1.05, duration: 0.4, ease: "power2.out" });
+            // Badges fade & move up
+            gsap.to(badges, { y: 0, opacity: 1, stagger: 0.1, duration: 0.4, ease: "power2.out" });
         });
 
-        card.addEventListener("mouseleave", () => {
-            gsap.to(card.querySelector("img"), { scale: 1, duration: 0.5, ease: "power3.out" });
-            gsap.to(card.querySelector(".overlay"), { y: "100%", duration: 0.5, ease: "power3.out" });
+        card.addEventListener('mouseleave', () => {
+            gsap.to(img, { scale: 1, duration: 0.5, ease: "power2.out" });
+            gsap.to(title, { y: 0, scale: 1, duration: 0.4, ease: "power2.out" });
+            gsap.to(badges, { y: 10, opacity: 0.9, stagger: 0.1, duration: 0.4, ease: "power2.out" });
         });
     });
-});
+}
+
 
 // owner message
 document.addEventListener("DOMContentLoaded", () => {
@@ -303,22 +311,6 @@ document.querySelectorAll('.blog-card').forEach(card => {
 });
 
 
-// subscription
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.from(".subscription-card", { opacity: 0, y: 50, duration: 1, ease: "power3.out" });
-    gsap.from(".subscription-card h2", { opacity: 0, y: 20, duration: 0.8, delay: 0.3, ease: "power2.out" });
-    gsap.from(".subscription-card p", { opacity: 0, y: 20, duration: 0.8, delay: 0.5, ease: "power2.out" });
-    gsap.from(".subscription-card input, .subscription-card button", { opacity: 0, y: 20, duration: 0.8, stagger: 0.2, delay: 0.7, ease: "power2.out" });
-
-    // Hover effect for button
-    const btn = document.querySelector(".btn-gradient");
-    btn.addEventListener("mouseenter", () => {
-        gsap.to(btn, { scale: 1.1, boxShadow: "0 0 25px rgba(255,81,47,0.6)", duration: 0.3 });
-    });
-    btn.addEventListener("mouseleave", () => {
-        gsap.to(btn, { scale: 1, boxShadow: "none", duration: 0.3 });
-    });
-});
 
 
 
@@ -345,3 +337,50 @@ gsap.from(".social-icons a", {
     stagger: 0.2,
     delay: 1.5
 });
+
+
+//logo
+// Ensure GSAP is loaded
+if (typeof gsap !== 'undefined') {
+    const logo = document.querySelector('.navbar-brand .logo');
+
+    // Mouse enter event
+    logo.addEventListener('mouseenter', () => {
+        gsap.to(logo, {
+            scale: 1.1,
+            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+            duration: 0.3,
+            ease: 'power1.out'
+        });
+    });
+
+    // Mouse leave event
+    logo.addEventListener('mouseleave', () => {
+        gsap.to(logo, {
+            scale: 1,
+            boxShadow: 'none',
+            duration: 0.3,
+            ease: 'power1.in'
+        });
+    });
+}
+
+// Ensure GSAP is loaded
+if (typeof gsap !== 'undefined') {
+    const title = document.querySelector('.section-title h3');
+
+    // Initial state
+    gsap.set(title, { opacity: 0, y: 50 });
+
+    // Animation on page load
+    gsap.to(title, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out',
+        delay: 0.5
+    });
+}
+
+
+//scroll

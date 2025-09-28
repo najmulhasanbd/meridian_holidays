@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.5/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -99,110 +99,78 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Packages</li>
+                    <li class="breadcrumb-item active" aria-current="page">Group Ticket Query</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <!-- blog start -->
-    <section class="blog-section py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 1">
-                        </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">Amazing Design Tips</h5>
-                            <p class="blog-excerpt">Learn how to make stunning UI designs...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 24, 2025</span>
-                        </div>
-                    </div>
+
+    <!-- umrah -->
+    <div class="umrah">
+        <div class="container py-5">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header">
+                    <h4 class="mb-0">Umrah Query Form</h4>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 2">
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Name*</label>
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Email*</label>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Contact Number*</label>
+                                <input type="text" class="form-control" placeholder="Contact Number">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Starting Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Return Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Any Airline Choice</label>
+                                <input type="text" class="form-control" placeholder="Airline Name">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Airline Ticket Category</label>
+                                <input type="text" class="form-control" placeholder="Economy/Business">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Total Number of Passenger(s)</label>
+                                <div class="umr-passenger-input">
+                                    <button type="button" class="umr-btn-decr">−</button>
+                                    <input type="text" class="form-control umr-passenger-count" value="1" readonly>
+                                    <button type="button" class="umr-btn-incr">+</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Any Other Special Requirements</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Please specify your requirements here."></textarea>
+                            </div>
+
+                            <div class="col-md-12 d-flex justify-content-between align-items-center mt-3">
+                                <button type="submit" class="btn-submit">Send Query</button>
+                            </div>
                         </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">UI/UX Best Practices</h5>
-                            <p class="blog-excerpt">Top tips for user-friendly interfaces...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 20, 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 3">
-                        </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">Creative Inspirations</h5>
-                            <p class="blog-excerpt">Boost your creativity with these ideas...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 18, 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 3">
-                        </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">Creative Inspirations</h5>
-                            <p class="blog-excerpt">Boost your creativity with these ideas...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 18, 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 3">
-                        </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">Creative Inspirations</h5>
-                            <p class="blog-excerpt">Boost your creativity with these ideas...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 18, 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="blog-card">
-                        <div class="blog-image">
-                            <img src="assets/images/slider/1.jpg" alt="Blog 3">
-                        </div>
-                        <div class="blog-content p-3">
-                            <h5 class="blog-title">Creative Inspirations</h5>
-                            <p class="blog-excerpt">Boost your creativity with these ideas...</p>
-                        </div>
-                        <div class="blog-footer p-3 d-flex justify-content-between align-items-center">
-                            <span class="author">By Admin</span>
-                            <span class="date">Sep 18, 2025</span>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- blog start -->
+    </div>
 
     <!-- subscription  -->
     <section class="subscription-section py-5">
@@ -315,11 +283,31 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.5/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.umr-btn-incr').on('click', function () {
+                var $input = $(this).siblings('.umr-passenger-count');
+                var current = parseInt($input.val()) || 0;
+                $input.val(current + 1);
+            });
+
+            $('.umr-btn-decr').on('click', function () {
+                var $input = $(this).siblings('.umr-passenger-count');
+                var current = parseInt($input.val()) || 0;
+                if (current > 1) {
+                    $input.val(current - 1);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

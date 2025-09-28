@@ -48,8 +48,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark py-2">
             <div class="container">
                 <!-- Logo Left -->
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.jpeg" alt="Logo" style="max-width:150px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.jpeg" alt="Logo" class="logo">
                 </a>
 
                 <!-- Hamburger / Offcanvas Toggle (Mobile) -->
@@ -61,10 +61,10 @@
                 <!-- Desktop Menu -->
                 <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
                     <ul class="navbar-nav mb-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -80,11 +80,11 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -158,16 +158,23 @@
     <!-- package -->
     <section class="package-section py-5">
         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Meridian Package</h3>
+                    </div>
+                </div>
+            </div>
             <div class="row g-4">
                 <!-- Package 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/slider/1.jpg" alt="Package A">
-                            <div class="overlay">
-                                <h4>Package A</h4>
-                                <p><i class="fas fa-clock"></i> 3 Days</p>
-                                <p class="price"><i class="fas fa-dollar-sign"></i> $150</p>
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
                             </div>
                         </div>
                     </div>
@@ -175,13 +182,13 @@
 
                 <!-- Package 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/slider/1.jpg" alt="Package B">
-                            <div class="overlay">
-                                <h4>Package B</h4>
-                                <p><i class="fas fa-clock"></i> 5 Days</p>
-                                <p class="price"><i class="fas fa-dollar-sign"></i> $250</p>
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
                             </div>
                         </div>
                     </div>
@@ -189,13 +196,123 @@
 
                 <!-- Package 3 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="package-card">
-                        <div class="package-img">
-                            <img src="assets/images/slider/1.jpg" alt="Package C">
-                            <div class="overlay">
-                                <h4>Package C</h4>
-                                <p><i class="fas fa-clock"></i> 7 Days</p>
-                                <p class="price"><i class="fas fa-dollar-sign"></i> $350</p>
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- package -->
+    <section class="package-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Latest Package</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- package -->
+    <section class="package-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h3>Recommand Package</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="package-card card">
+                        <img src="assets/images/slider/owner.jpg" alt="Package A" class="package-img">
+                        <div class="overlay p-3">
+                            <h4>Package A</h4>
+                            <div class="flex flex-wrap">
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                                <span class="price"><i class="fas fa-dollar-sign"></i> $150</span>
                             </div>
                         </div>
                     </div>
@@ -239,7 +356,7 @@
         <source src="assets/images/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
+
     <!-- blog start -->
     <section class="blog-section py-5">
         <div class="container">
@@ -293,25 +410,6 @@
         </div>
     </section>
     <!-- blog start -->
-
-    <!-- package -->
-    <section>
-        <div class="package-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title">
-                            <h4>Meridian Package</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- package -->
 
     <!-- subscription  -->
     <section class="subscription-section py-5">

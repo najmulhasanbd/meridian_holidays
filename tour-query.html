@@ -48,8 +48,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark py-2">
             <div class="container">
                 <!-- Logo Left -->
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.jpeg" alt="Logo" style="max-width:150px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.jpeg" alt="Logo" class="logo">
                 </a>
 
                 <!-- Hamburger / Offcanvas Toggle (Mobile) -->
@@ -61,10 +61,10 @@
                 <!-- Desktop Menu -->
                 <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
                     <ul class="navbar-nav mb-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -80,11 +80,11 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +99,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Packages</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tour Query</li>
                 </ol>
             </nav>
         </div>
@@ -110,147 +110,162 @@
     <div class="umrah">
         <div class="container py-5">
             <div class="card shadow-lg border-0 rounded-4">
-                <div class="card-header bg-primary text-white text-center py-3">
-                    <h4 class="mb-0">Umrah Query Form</h4>
+                <div class="card-header">
+                    <h4 class="mb-0">Tour Query Form</h4>
                 </div>
-                <div class="card-body bg-white p-4">
-
+                <div class="card-body">
                     <form>
-                        <div class="row g-3">
-                            <!-- Name, Email, Contact -->
-                            <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Name*</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Email*</label>
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Contact Number*</label>
                                 <input type="text" class="form-control" placeholder="Contact Number">
                             </div>
 
-                            <!-- Dates & Airline -->
-                            <div class="col-md-3">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Starting Date</label>
                                 <input type="date" class="form-control">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Return Date</label>
                                 <input type="date" class="form-control">
                             </div>
-                            <div class="col-md-3">
-                                <label class="form-label">Any Airline Choice</label>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Visiting Country</label>
                                 <input type="text" class="form-control" placeholder="Airline Name">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Visiting Cities</label>
+                                <input type="text" class="form-control" placeholder="Airline Name">
+                            </div>
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">Airline Ticket Category</label>
                                 <input type="text" class="form-control" placeholder="Economy/Business">
                             </div>
 
-                            <!-- Counter Inputs -->
-                            <div class="col-md-4">
-                                <label class="form-label">Nights Stay in Makkah</label>
-                                <input type="number" class="form-control" value="0" min="0">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">How Many Male Adult(s)</label>
+                                <div class="umr-passenger-input">
+                                    <button type="button" class="umr-btn-decr">−</button>
+                                    <input type="text" class="form-control umr-passenger-count" value="1" readonly>
+                                    <button type="button" class="umr-btn-incr">+</button>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <label class="form-label">Nights Stay in Madina</label>
-                                <input type="number" class="form-control" value="0" min="0">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">How Many Female Adult(s)</label>
+                                <div class="umr-passenger-input">
+                                    <button type="button" class="umr-btn-decr">−</button>
+                                    <input type="text" class="form-control umr-passenger-count" value="1" readonly>
+                                    <button type="button" class="umr-btn-incr">+</button>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <label class="form-label">How Many Rooms</label>
-                                <input type="number" class="form-control" value="0" min="0">
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label">How Many Male Adults</label>
-                                <input type="number" class="form-control" value="0" min="0">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label">How Many Female Adults</label>
-                                <input type="number" class="form-control" value="0" min="0">
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-3">
                                 <label class="form-label">How Many Child(s)</label>
-                                <input type="number" class="form-control" value="0" min="0">
-                            </div>
-
-                            <!-- Radio Options -->
-                            <div class="col-md-12">
-                                <label class="form-label d-block">Accommodations Type</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="acc" id="2star">
-                                    <label class="form-check-label" for="2star">2 Star</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="acc" id="3star">
-                                    <label class="form-check-label" for="3star">3 Star</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="acc" id="4star">
-                                    <label class="form-check-label" for="4star">4 Star</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="acc" id="5star">
-                                    <label class="form-check-label" for="5star">5 Star</label>
+                                <div class="umr-passenger-input">
+                                    <button type="button" class="umr-btn-decr">−</button>
+                                    <input type="text" class="form-control umr-passenger-count" value="1" readonly>
+                                    <button type="button" class="umr-btn-incr">+</button>
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label d-block">Foods Included</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="food" id="foodYes">
-                                    <label class="form-check-label" for="foodYes">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="food" id="foodNo">
-                                    <label class="form-check-label" for="foodNo">No</label>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">How many Rooms</label>
+                                <div class="umr-passenger-input">
+                                    <button type="button" class="umr-btn-decr">−</button>
+                                    <input type="text" class="form-control umr-passenger-count" value="1" readonly>
+                                    <button type="button" class="umr-btn-incr">+</button>
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label d-block">Guide Required</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="guide" id="guideYes">
-                                    <label class="form-check-label" for="guideYes">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="guide" id="guideNo">
-                                    <label class="form-check-label" for="guideNo">No</label>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Accommodation Type</label>
+                                <div class="umr-accom-type">
+                                    <label class="umr-radio">
+                                        <input type="radio" name="accom_type" value="2_star" id="2_star">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">2 Star</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="accom_type" value="3_star" id="3_star">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">3 Star</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="accom_type" value="4_star" id="4_star">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">4 Star</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="accom_type" value="5_star" id="5_star">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">5 Star</span>
+                                    </label>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
-                                <label class="form-label d-block">Private Transportation</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="transport" id="transportYes">
-                                    <label class="form-check-label" for="transportYes">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="transport" id="transportNo">
-                                    <label class="form-check-label" for="transportNo">No</label>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Foods Included</label>
+                                <div class="umr-accom-type">
+                                    <label class="umr-radio">
+                                        <input type="radio" name="foods_included" value="yes" id="foods_yes">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">Yes</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="foods_included" value="no" id="foods_no">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">No</span>
+                                    </label>
                                 </div>
                             </div>
 
-                            <!-- Textarea -->
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Guide Required</label>
+                                <div class="umr-accom-type">
+                                    <label class="umr-radio">
+                                        <input type="radio" name="guide_required" value="yes" id="guide_yes">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">Yes</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="guide_required" value="no" id="guide_no">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">No</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Private Transportation</label>
+                                <div class="umr-accom-type">
+                                    <label class="umr-radio">
+                                        <input type="radio" name="private_transport" value="yes" id="transport_yes">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">Yes</span>
+                                    </label>
+                                    <label class="umr-radio">
+                                        <input type="radio" name="private_transport" value="no" id="transport_no">
+                                        <span class="umr-radio-mark"></span>
+                                        <span class="umr-radio-text">No</span>
+                                    </label>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <label class="form-label">Any Other Special Requirements</label>
                                 <textarea class="form-control" rows="4"
                                     placeholder="Please specify your requirements here."></textarea>
                             </div>
 
-                            <!-- reCAPTCHA + Button -->
                             <div class="col-md-12 d-flex justify-content-between align-items-center mt-3">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="recaptcha">
-                                    <label for="recaptcha" class="form-check-label">I'm not a robot</label>
-                                </div>
-                                <button type="submit" class="btn btn-success px-4">Send Query</button>
+                                <button type="submit" class="btn-submit">Send Query</button>
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -367,12 +382,31 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.5/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.umr-btn-incr').on('click', function () {
+                var $input = $(this).siblings('.umr-passenger-count');
+                var current = parseInt($input.val()) || 0;
+                $input.val(current + 1);
+            });
+
+            $('.umr-btn-decr').on('click', function () {
+                var $input = $(this).siblings('.umr-passenger-count');
+                var current = parseInt($input.val()) || 0;
+                if (current > 1) {
+                    $input.val(current - 1);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
