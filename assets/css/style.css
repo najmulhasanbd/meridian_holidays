@@ -2035,3 +2035,46 @@ iframe {
 .tour-card.animate-card.d-flex.flex-column.flex-md-row {
     transition: all .5s ease-in-out;
 }
+.package-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.package-card .img-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.package-card:hover img {
+    transform: scale(1.15);
+}
+
+/* Package Name Overlay - always visible */
+.package-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    opacity: 1; /* Always visible */
+}

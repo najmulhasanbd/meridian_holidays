@@ -421,3 +421,12 @@ $.scrollUp({
       ease: "power2.out"
     });
   });
+
+  //pacage
+      gsap.from(".package-card", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
