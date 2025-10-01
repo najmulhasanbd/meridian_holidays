@@ -63,10 +63,8 @@ img {
 }
 
 .topheader {
-    background-color: #286AA6;
-    /* ✅ gradient off, solid color */
+    background-color: #e9a746;
     padding: 10px 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -664,12 +662,14 @@ iframe {
     transition: background 0.5s, color 0.5s;
 }
 
-.blog-card:hover .blog-footer {
-    background: linear-gradient(90deg, #ff6ec7, #ffd43b);
+.blog-card:hover .blog-footer, .btn-gradient {
+    background: linear-gradient(90deg, #266aa2, #ffd43b);
     color: #fff;
+    transition: all .3s linear;
 }
-
-
+.btn-gradient:hover{
+    color: black;
+}
 /* footer */
 .footer {
     background: #0a3d62;
@@ -1792,12 +1792,13 @@ iframe {
 }
 
 .subscription-section {
-    position: relative;
-    background: linear-gradient(120deg, #fdfbfb, #ebedee);
-    /* subtle light gradient */
     color: #333;
     overflow: hidden;
     padding: 80px 0;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
 .subscription-card {
@@ -1840,4 +1841,7 @@ iframe {
     background: linear-gradient(90deg, #66d7d1, #6fcf97);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.social-icon a {
+    padding: 10px;
 }
