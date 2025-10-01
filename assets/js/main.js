@@ -396,3 +396,28 @@ $.scrollUp({
   scrollText: '<i class="fab fa-facebook-f"></i>', // Text for element
   activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
+
+//countr
+   gsap.from(".country-card", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
+
+    //countr pack
+      gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".animate-card").forEach(card => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: "top 90%",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power2.out"
+    });
+  });

@@ -164,7 +164,7 @@
     <!-- header end-->
 
     <!-- breadcrumb -->
-    <section class="breadcrumb-section">
+    <section class="breadcrumb-section" style="background-image: url(assets/images/slider/1.jpg);">
         <div class="breadcrumb-bg"></div>
         <div class="breadcrumb-content">
             <h1>Our Packages</h1>
@@ -180,10 +180,11 @@
     <div class="umr-package-details">
         <div class="container mt-5">
             <div class="umr-card shadow-sm">
-                <div class="umr-card-header bg-primary text-white">
+                <div class="umr-card-header text-white">
                     <h4 class="mb-0">Kunming, Beijing & Shanghai Group Tour 8 Days & 7 Nights</h4>
                 </div>
                 <div class="umr-card-body">
+
                     <div class="row align-items-center">
                         <div class="col-md-8">
                             <div class="umr-info-left">
@@ -208,6 +209,7 @@
                         <div class="col-md-4">
                             <p><strong>Currency:</strong> Chinese Yuan (CNY)</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -469,7 +471,7 @@
             </div>
             <div class="col-lg-3 ">
                 <div class="pack-details">
-                    <button class="btn btn-success w-100"
+                    <button class="btn  w-100"
                         onclick="window.open('http://103.192.157.45:81/Package/DownloadPdf/f8e68ae3-3b7a-4391-a3fc-ba64c54b2984.pdf', '_blank')">
                         Open Package Details
                     </button>
@@ -549,6 +551,61 @@
             </div>
         </div>
     </div>
+    <div class="booking-form py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <div class="card shadow-lg border-0 rounded-4 p-4">
+                        <h3 class="text-center mb-4">Booking Form</h3>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Booking Date</label>
+                                <input type="date" id="date" name="date" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <select id="guests" name="guests" class="form-select" required>
+                                    <option value="">Select</option>
+                                    <option>1 Person</option>
+                                    <option>2 People</option>
+                                    <option>3 People</option>
+                                    <option>4+ People</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Special Request</label>
+                                <textarea id="message" name="message" class="form-control" rows="3"
+                                    placeholder="Any special request..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 py-2">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- subscription  -->
     <section class="subscription-section py-5" style="background: url(./assets/images/bg.svg);">
@@ -573,7 +630,6 @@
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">
-
             <!-- Contact Info -->
             <div class="row mb-4">
                 <div class="col-lg-6">
@@ -600,11 +656,10 @@
                 <div class="col-md-4 mb-4">
                     <h5>Useful Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -656,12 +711,16 @@
                 button_color: "#FF6550",
                 position: "right",
             };
-            var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+            var proto = 'https:',
+                host = "getbutton.io",
+                url = proto + '//static.' + host;
             var s = document.createElement('script');
             s.type = 'text/javascript';
             s.async = true;
             s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            s.onload = function () {
+                WhWidgetSendButton.init(host, proto, options);
+            };
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
         })();
@@ -755,9 +814,15 @@
                 prevEl: ".pkg-swiper-button-prev",
             },
             breakpoints: {
-                0: { slidesPerView: 1 },
-                768: { slidesPerView: 1 },
-                1024: { slidesPerView: 1 }
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                1024: {
+                    slidesPerView: 1
+                }
             }
         });
     </script>
