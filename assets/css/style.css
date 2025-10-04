@@ -60,6 +60,9 @@ img {
 .navbar-brand .logo {
     max-width: 150px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .topheader {
